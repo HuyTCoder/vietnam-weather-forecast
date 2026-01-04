@@ -1,0 +1,84 @@
+# ============================================
+# Vietnam Weather Forecast ML Demo - .gitignore
+# ============================================
+
+# === Virtual Environment ===
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# === Large Data Directories ===
+weather_20loc/
+
+# === Large Zip Files ===
+*.zip
+
+# === ALL Model Files (keep only reports) ===
+# XGBoost & LightGBM models (thousands of .json/.txt files)
+xgb_out_singlekeys/models/
+lgb_out_singlekeys/models/
+
+# Ridge Regression models (.joblib files)
+ridge_out_singlekeys_fast/models/
+
+# GRU & TCN models (.pt, .npz files)
+gru_weather_v3_out/*.pt
+gru_weather_v3_out/*.npz
+tcn_weather_2step_out/**/*.pt
+tcn_weather_2step_out/**/*.npz
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# === IDE ===
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# === Logs ===
+*.log
+logs/
+
+# === Temporary Files ===
+*.tmp
+*.temp
+.cache/
+
+# === Model Checkpoints (keep only final models) ===
+# Uncomment below if you want to exclude all model files
+# *.pt
+# *.pth
+# *.joblib
+# *.npz
