@@ -1,0 +1,14 @@
+{
+    "found": true,
+    "location_id": "400a5792-7432-4ab5-a280-97dd91b21621",
+    "lat": 21.0,
+    "lon": 106.0,
+    "valid_at": "2025-12-10T08:00:00+00:00",
+    "temp_c": 25.1,
+    "wind_ms": 1.33,
+    "precip_mm": 0.0,
+    "wind_dir_deg": 103.0,
+    "rel_humidity_pct": 57.0,
+    "cloudcover_pct": 68.0,
+    "surface_pressure_hpa": 1015.3
+}

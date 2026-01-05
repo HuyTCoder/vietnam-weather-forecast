@@ -1,0 +1,38 @@
+{
+  "expo": {
+    "name": "Weather Forest",
+    "slug": "weather-forest",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#007AFF"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.weatherforest.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "We need your location to provide accurate weather forecasts"
+      }
+    },
+    "android": {
+      "package": "com.weatherforest.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "We need your location to provide accurate weather forecasts."
+        }
+      ]
+    ]
+  }
+}
