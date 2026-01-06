@@ -1,0 +1,27 @@
+from django.urls import path
+from .views_obs import (
+    latest_snapshot,
+    merged_timeseries,
+    nearest_point,
+    rain_frames,
+)
+from .views_alerts import obs_summary
+from .views_overview import obs_overview
+from . import views_flood
+from .views_daily import daily_summary  # <- THÊM DÒNG NÀY
+
+
+urlpatterns = [
+    path("obs/latest", latest_snapshot),
+    path("obs/timeseries/<uuid:location_id>", merged_timeseries),
+    path("obs/daily/<uuid:location_id>", daily_summary),  # <- THÊM ROUTE DAILY
+    path("obs/nearest", nearest_point),
+    path("obs/summary/<uuid:location_id>", obs_summary),
+    path("obs/overview", obs_overview),
+    path("obs/rain_frames", rain_frames),
+    path(
+        "obs/flood_risk_latest",
+        views_flood.flood_risk_latest,
+        name="flood_risk_latest",
+    ),
+]
